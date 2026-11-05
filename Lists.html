@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Lists</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+     <header class="header">
+     <div class="logo">
+         <img src="./code.png" alt="HTML Reference Hub">
+          <h2>HTML Reference Hub</h2> 
+        </div>
+         <nav class="navbar"> 
+            <a href="index.html">Introduction</a> 
+            <a href="Lists.html">Lists</a>
+             <a href="tables.html">Tables</a>
+              <a href="media.html">Multimedia</a>
+               <a href="hyperlinks.html">Hyperlinks</a> 
+               <a href="forms.html">Forms</a> 
+               <a href="semantic.html">Semantic Elements and Layout</a> 
+            </nav> </header>
+    <table border="1" width="100%">
+        <tr>
+            <td width="18%" valign="top" style="background-color:cornsilk;">
+                <section>
+                <h1>Topics Covered</h1>
+                <ul type="none" style="color:slateblue;">
+                    <li><a href="#Introduction">Introduction</a></li><br><br>
+                    <li><a href="#Ordered">Ordered List</a></li><br><br>
+                    <li><a href="#Unordered">Unordered List</a></li><br><br>
+                    <li><a href="#Description">Description List</a></li><br><br>
+                    <li><a href="#Nested">Nested List</a></li><br><br>
+                    <li><a href="#Adv">Advantages of HTML Lists</a></li><br><br>
+                    <li><a href="#Apl">Applications of HTML Lists</a></li><br><br>
+                    <li><a href="#Con">Conclusion</a></li><br><br>
+                </ul>
+                </section>
+            </td>
+            <td width="70%" valign="top" style="background-color:darkturquoise;">
+                <h1 align="center">HTML Lists</h1>
+                <h2 id="Introduction">Introduction</h2>
+                <p>
+                    HTML Lists are used to display related items in an organized manner.
+                    They improve the readability of web pages and help users understand
+                    information easily. HTML provides three types of lists:
+                </p>
+
+                <ol>
+                    <li>Ordered List</li>
+                    <li>Unordered List</li>
+                    <li>Description List</li>
+                </ol>
+
+
+
+                <h2 id="Ordered">1. Ordered List (ol)</h2>
+
+                <p>An ordered list displays items in a numbered sequence.</p>
+
+                <h3>Example:</h3>
+
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>React JS</li>
+                </ol>
+
+                <h3>Ordered List with Letters</h3>
+
+                <ol type="A">
+                    <li>Chapter 1</li>
+                    <li>Chapter 2</li>
+                    <li>Chapter 3</li>
+                </ol>
+
+                <h3>Ordered List with Roman Numbers</h3>
+
+                <ol type="I">
+                    <li>Introduction</li>
+                    <li>Body</li>
+                    <li>Conclusion</li>
+                </ol>
+
+                <hr>
+
+                <h2 id="Unordered">2. Unordered List (ul)</h2>
+
+                <p>An unordered list displays items using bullets.</p>
+
+                <h3>Example:</h3>
+
+                <ul>
+                    <li>Apple</li>
+                    <li>Mango</li>
+                    <li>Orange</li>
+                    <li>Banana</li>
+                    <li>Grapes</li>
+                </ul>
+
+                <h3>Square Bullets</h3>
+
+                <ul type="square">
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                </ul>
+
+                <h3>Circle Bullets</h3>
+
+                <ul type="circle">
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                    <li>Oracle</li>
+                </ul>
+
+
+
+                <h2 id="Description">3. Description List (dl)</h2>
+
+                <dl>
+                    <dt><b>HTML</b></dt>
+                    <dd>HyperText Markup Language used to create web pages.</dd>
+
+                    <dt><b>CSS</b></dt>
+                    <dd>Cascading Style Sheets used for designing web pages.</dd>
+
+                    <dt><b>JavaScript</b></dt>
+                    <dd>A scripting language used to make web pages interactive.</dd>
+                </dl>
+
+
+
+                <h2 id="Nested">Nested List</h2>
+
+                <ul>
+                    <li>Programming Languages
+                        <ul>
+                            <li>Python</li>
+                            <li>Java
+                                <ul>
+                                    <li>Core Java</li>
+                                    <li>Advanced Java</li>
+                                </ul>
+                            </li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </li>
+
+                    <li>Databases
+                        <ul>
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                            <li>Oracle</li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+
+                <h2 id="Adv">Advantages of HTML Lists</h2>
+
+                <ul>
+                    <li>Organizes information clearly.</li>
+                    <li>Improves readability.</li>
+                    <li>Easy to understand.</li>
+                    <li>Useful for navigation menus.</li>
+                    <li>Supports nested lists.</li>
+                    <li>Enhances user experience.</li>
+                </ul>
+
+
+
+
+                <h2 id="Apl">Applications of HTML Lists</h2>
+
+                <ol>
+                    <li>Website Navigation</li>
+                    <li>Shopping Lists</li>
+                    <li>Product Features</li>
+                    <li>Course Syllabus</li>
+                    <li>Restaurant Menus</li>
+                    <li>FAQs</li>
+                    <li>Employee Details</li>
+                    <li>Student Records</li>
+                </ol>
+
+
+
+                <h2 id="con">Conclusion</h2>
+
+                <p>
+                    HTML Lists are an essential part of web development. They help organize
+                    content in a structured and readable format. The three types of lists
+                    available in HTML are Ordered Lists, Unordered Lists, and Description
+                    Lists. Nested lists can also be used to represent hierarchical
+                    information effectively.
+                </p>
+            </td>
+            
+        </tr>
+        
+    </table>
+</body>
+
+</html>

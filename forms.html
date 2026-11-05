@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+     <header class="header">
+     <div class="logo">
+         <img src="./code.png" alt="HTML Reference Hub">
+          <h2>HTML Reference Hub</h2> 
+        </div>
+         <nav class="navbar"> 
+            <a href="index.html">Introduction</a> 
+            <a href="Lists.html">Lists</a>
+             <a href="tables.html">Tables</a>
+              <a href="media.html">Multimedia</a>
+               <a href="hyperlinks.html">Hyperlinks</a> 
+               <a href="forms.html">Forms</a> 
+               <a href="semantic.html">Semantic Elements and Layout</a> 
+            </nav> </header>
+    <table border="1" width="100%">
+        <tr>
+            <td width="18%" valign="top" style="background-color:cornsilk;">
+                <section>
+                <h1>Topics Covered</h1>
+                <ul type="none" style="color:slateblue;">
+                    <li><a href="#">What is HTML Form</a></li><br><br>
+                    <li><a href="#">Syntax of HTML Form</a></li><br><br>
+                    <li><a href="#">Common HTML Tags</a></li><br><br>
+                    <li><a href="#">Commom Input Types</a></li><br><br>
+                    <li><a href="#">Sample Student Registration Form</a></li><br><br>
+                    <li><a href="#">Advantages of HTML Forms</a></li><br><br>
+                    <li><a href="#">Applications of HTML Forms</a></li><br><br>
+                    <li><a href="#">Conclusion</a></li><br><br>
+                </ul>
+                </section>
+            </td>
+            <td width="70%" valign="top" style="background-color:lightgreen;">
+
+    <h1 align="center">HTML Forms</h1>
+
+
+    <h2>What is an HTML Form?</h2>
+
+    <p>
+        An HTML form is used to collect information from users and send it to a
+        web server for processing. Forms allow users to enter data such as
+        names, email addresses, passwords, phone numbers, and feedback. HTML
+        forms are created using the <b>&lt;form&gt;</b> tag and contain various
+        input elements like text boxes, radio buttons, checkboxes, drop-down
+        lists, and buttons.
+    </p>
+
+
+
+    <h2>Syntax of HTML Form</h2>
+
+    <pre>
+&lt;form action="submit.html" method="post"&gt;
+    Form Elements
+&lt;/form&gt;
+    </pre>
+
+
+
+    <h2>Common HTML Form Tags</h2>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th>Tag</th>
+            <th>Description</th>
+        </tr>
+
+        <tr>
+            <td>&lt;form&gt;</td>
+            <td>Creates an HTML form.</td>
+        </tr>
+
+        <tr>
+            <td>&lt;input&gt;</td>
+            <td>Creates different types of input fields.</td>
+        </tr>
+
+        <tr>
+            <td>&lt;label&gt;</td>
+            <td>Defines a label for an input field.</td>
+        </tr>
+
+        <tr>
+            <td>&lt;textarea&gt;</td>
+            <td>Creates a multi-line text box.</td>
+        </tr>
+
+        <tr>
+            <td>&lt;select&gt;</td>
+            <td>Creates a drop-down list.</td>
+        </tr>
+
+        <tr>
+            <td>&lt;option&gt;</td>
+            <td>Defines an option in a drop-down list.</td>
+        </tr>
+
+        <tr>
+            <td>&lt;button&gt;</td>
+            <td>Creates a clickable button.</td>
+        </tr>
+    </table>
+
+
+    <h2>Common Input Types</h2>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th>Input Type</th>
+            <th>Purpose</th>
+        </tr>
+
+        <tr>
+            <td>text</td>
+            <td>Accepts single-line text.</td>
+        </tr>
+
+        <tr>
+            <td>password</td>
+            <td>Accepts hidden password input.</td>
+        </tr>
+
+        <tr>
+            <td>email</td>
+            <td>Accepts email addresses.</td>
+        </tr>
+
+        <tr>
+            <td>number</td>
+            <td>Accepts numeric values.</td>
+        </tr>
+
+        <tr>
+            <td>date</td>
+            <td>Selects a date.</td>
+        </tr>
+
+        <tr>
+            <td>radio</td>
+            <td>Selects one option from a group.</td>
+        </tr>
+
+        <tr>
+            <td>checkbox</td>
+            <td>Selects multiple options.</td>
+        </tr>
+
+        <tr>
+            <td>file</td>
+            <td>Uploads a file.</td>
+        </tr>
+
+        <tr>
+            <td>submit</td>
+            <td>Submits the form.</td>
+        </tr>
+
+        <tr>
+            <td>reset</td>
+            <td>Clears all form fields.</td>
+        </tr>
+    </table>
+
+
+    <h2>Sample Student Registration Form</h2>
+
+    <form>
+
+        <label>Full Name:</label><br>
+        <input type="text" placeholder="Enter your name"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" placeholder="Enter your email"><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" placeholder="Enter password"><br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="tel"><br><br>
+
+        <label>Date of Birth:</label><br>
+        <input type="date"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other
+        <br><br>
+
+        <label>Skills:</label><br>
+        <input type="checkbox"> HTML
+        <input type="checkbox"> CSS
+        <input type="checkbox"> JavaScript
+        <br><br>
+
+        <label>Course:</label><br>
+        <select>
+            <option>Select Course</option>
+            <option>Python Full Stack</option>
+            <option>Java Full Stack</option>
+            <option>MERN Stack</option>
+        </select>
+
+        <br><br>
+
+        <label>Address:</label><br>
+        <textarea rows="4" cols="40"></textarea>
+
+        <br><br>
+
+        <label>Upload Resume:</label><br>
+        <input type="file">
+
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+
+    </form>
+
+
+
+    <h2>Advantages of HTML Forms</h2>
+
+    <ul>
+        <li>Collects user information efficiently.</li>
+        <li>Supports different types of input fields.</li>
+        <li>Easy to create and customize.</li>
+        <li>Allows user interaction with websites.</li>
+        <li>Can send data to a web server.</li>
+        <li>Improves user experience.</li>
+    </ul>
+
+
+
+    <h2>Applications of HTML Forms</h2>
+
+    <ol>
+        <li>User Registration Forms</li>
+        <li>Login Forms</li>
+        <li>Contact Forms</li>
+        <li>Feedback Forms</li>
+        <li>Online Surveys</li>
+        <li>Job Application Forms</li>
+        <li>College Admission Forms</li>
+        <li>Online Shopping Checkout Forms</li>
+    </ol>
+
+
+
+    <h2>Conclusion</h2>
+
+    <p>
+        HTML forms are an essential part of web development. They allow users
+        to enter and submit information through various input elements.
+        Using tags such as <b>&lt;form&gt;</b>, <b>&lt;input&gt;</b>,
+        <b>&lt;textarea&gt;</b>, and <b>&lt;select&gt;</b>, developers can
+        create interactive web pages. HTML forms are widely used in
+        registration, login, feedback, and contact pages.
+    </p>
+
+</body>
+
+</html>
